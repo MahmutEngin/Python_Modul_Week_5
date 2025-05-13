@@ -42,3 +42,18 @@ school.view_student_list()
 school.view_teacher_list()
 
 # Q3
+
+class Shape():
+    def __init__(self, width,height):
+        self.width=width
+        self.height=height
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        super().__init__(width, height)
+    def calculate_area(self):
+        return self.width*self.height
+class Square(Shape):
+    def __init__(self, width):
+        super().__init__(width,width)
+    def area_calculate(self):
+        return self.width*self.width
