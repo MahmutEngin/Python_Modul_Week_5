@@ -32,11 +32,11 @@ class School():
         print("Teacher List:")
         for teacher, branch in self.teachers.items():
             print(f"Name: {teacher}, Major: {branch}")
-school = School("Greenwood High", 1995)
-school.add_new_student("Alice", "10A")
-school.add_new_student("Bob", "10B")
-school.add_new_teacher("Mr. Smith", "Mathematics")
-school.add_new_teacher("Ms. Johnson", "Science")
+school = School(input("Okul Ismini girin"),int(input("Foundation year")))
+school.add_new_student(input("Isim girin"), input("Sinif girin"))
+school.add_new_student(input("Isim girin"), input("Sinif girin"))
+school.add_new_teacher(input("Isim girin"), input("Brans"))
+school.add_new_teacher(input("Isim girin"), input("Brans"))
         
 school.view_student_list()
 school.view_teacher_list()
